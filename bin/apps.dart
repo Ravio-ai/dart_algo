@@ -1,14 +1,11 @@
-import 'package:apps/link_list.dart';
+import 'package:apps/stack.dart';
 
 void main() {
-  LinkedList list = LinkedList();
-  list.addLast("rivo");
-  list.addLast(2);
-  list.addLast("rio");
-  list.addLast(4);
-  list.addLast(5);
-
-  print(list.toArray());
-  list.reverse();
-  print(list.toArray());
+  Stack stack = Stack();
+  print(stack.isEmpty);
+  stack.push(10);
+  stack.push(20);
+  stack.push(30);
+  stack.pop();
+  print(stack.toArray());
 }

@@ -8,7 +8,7 @@ class LinkedList<T> {
   LinkedList() {
     head = null;
     tail = null;
-    this.size = 0;
+    size = 0;
   }
   int getLength() {
     return size;
