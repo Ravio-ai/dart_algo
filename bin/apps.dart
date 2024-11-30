@@ -1,11 +1,8 @@
-import 'package:apps/stack.dart';
+import 'package:apps/permutations.dart';
 
 void main() {
-  Stack stack = Stack();
-  print(stack.isEmpty);
-  stack.push(10);
-  stack.push(20);
-  stack.push(30);
-  stack.pop();
-  print(stack.toArray());
+  int n = 5; // Number of objects
+  int r = 3; // Number of objects to choose
+
+  print(combinations(n, r));
 }
